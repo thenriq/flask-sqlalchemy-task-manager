@@ -3,14 +3,18 @@ document.addEventListener('DOMContentLoaded', function () {
     let sidenav = document.querySelectorAll('.sidenav');
     M.Sidenav.init(sidenav);
 
-// datepicker initialization
+    // datepicker initialization
     let datepicker = document.querySelectorAll('.datepicker');
     M.Datepicker.init(datepicker, {
         format: "dd mmmm, yyyy",
-        i18n: {done: "Select"}
+        i18n: { done: "Select" }
     });
 
     // select initialization
-    let selects  = document.querySelectorAll('select');
+    let selects = document.querySelectorAll('select');
     M.FormSelect.init(selects);
+
+    // collpsible initialization1
+    let collapsibles = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(collapsibles);
 });
